@@ -1,0 +1,9 @@
+﻿@page  "{ApiResponse:alpha?}"
+@model BackendServiceModel
+@{
+    ViewData["Title"] = "Backend Service";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>The response from the backend service is shown below:</p>
+<p>@Model.ApiResponse</p>
