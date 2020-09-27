@@ -38,7 +38,7 @@ spec:
         "beta.kubernetes.io/os": linux
       containers:
       - name: aspnetfrontendapp
-        image: abs-aspnetfrontendapp:v1
+        image: abhinabsarkar/abs-aspnetfrontendapp:v1.0.0
         resources:
           requests:
             cpu: 100m
