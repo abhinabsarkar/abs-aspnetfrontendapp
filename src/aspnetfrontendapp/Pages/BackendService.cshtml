@@ -1,9 +1,11 @@
-﻿@page  "{ApiResponse:alpha?}"
+﻿@page  "{ApiResponse:alpha?}" 
 @model BackendServiceModel
 @{
     ViewData["Title"] = "Backend Service";
 }
 <h1>@ViewData["Title"]</h1>
+
+<p>The call is made to the endpoint: <mark>@ViewData["BackendUrl"]</mark></p>
 
 <p>The response from the backend service is shown below:</p>
 <p>@Model.ApiResponse</p>

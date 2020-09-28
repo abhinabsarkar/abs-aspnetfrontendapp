@@ -42,7 +42,8 @@ namespace aspnetfrontendapp.Pages
                     {
                         try
                         {
-                            ApiResponse = response.Result.Content.ReadAsStringAsync().Result;
+                            ViewData["BackendUrl"] = backendServiceUrl;
+                            ApiResponse =  response.Result.Content.ReadAsStringAsync().Result;
                         }
                         catch (Exception ex)
                         {
